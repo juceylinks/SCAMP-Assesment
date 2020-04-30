@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function myfunction(){
+
+            //declare variables 
+            let var1 = 0;
+            let var2 = 1;
+            let var3;
+
+            let num = prompt('enter limit for the sequence',0);
+
+            document.write(var1 + '<br />');
+            document.write(var2 + '<br />');
+
+            //the first two numbers are printed to the screen
+            //stuck here for days !!!
+
+            for(var i=3; i <= num; i++){
+                var3 = var1 + var2;
+                var1 = var2
+                var2 = var3;
+
+                document.write(var3 + '<br />');
+            }
+
+
+        };
+
+        myfunction();
+    </script>
+</body>
+</html>
